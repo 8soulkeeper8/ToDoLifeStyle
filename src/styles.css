@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* src/styles.css */
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease; /* Плавный переход */
+  border-radius: 5px; /* Скругленные углы */
+  margin-right: 10px; /* Отступ справа от кнопки (для разделения кнопок) */
+}
+button:hover {
+  background-color: rgb(235, 61, 61); /* Оранжевый цвет при наведении */
+}
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+}
+
+.task-list {
+  flex: 1;
+  padding: 20px;
+}
+
+.task-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.task-actions {
+  margin-top: 20px; /* Увеличиваем отступ между контентом задачи и кнопками */
+}
+
+.task-actions button {
+  margin-right: 10px; /* Добавляем отступ между кнопками */
+}
+
+
+.task-deadline, .task-project {
+  margin: 5px 0;
+}
+
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.important {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+strong {
+  font-weight: bold;
+}
+
+.important-label {
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+  gap: 10px; /* Отступ между текстом и чекбоксом */
+}
+
+
+.task-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-modal form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Блокируем изменение размера */
+}
+
+.task-files a {
+  color: rgb(82, 81, 81); /* Цвет текста ссылки */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s ease; /* Плавный переход цвета в течение 0.3 секунд */
+}
+
+.task-files a:hover {
+  color: rgb(238, 13, 13); /* Цвет при наведении */
+}
+.task-files ul {
+  list-style-type: none; /* Убирает маркеры списка */
+  padding-left: 0; /* Убираем отступ слева, если он есть */
+}
+
+.task-modal ul {
+  list-style-type: none; /* Убирает стандартные маркеры */
+  padding-left: 0; /* Убираем отступ слева, чтобы не было лишнего пространства */
+}
+
+.task-modal li {
+  margin: 5px 0; /* Устанавливаем небольшой отступ между элементами списка */
+}
+
+
+
+
